@@ -394,3 +394,68 @@ html, body {
   font-size: 1.6rem !important; /* Fiyatlar aşırı belirgin, karıştırılamaz */
   font-weight: 800 !important;
 }
+/* ========================================================
+   SÜPER MAKSİMUM DEV MODU - EKRANI %100 KİLİTLEME REÇETESİ
+   ======================================================== */
+
+/* 1. Sayfanın en altındaki tüm renk kaçmalarını ve boşlukları kökten yok ediyoruz */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  background-color: #0f1c24 !important; /* Boşluk kalsa bile arka plan rengimizle tamamen birleşir */
+}
+
+/* 2. Menü kutusunu enlemesine genişletip dikey yüksekliğini zorluyoruz */
+.menu-container {
+  width: 100% !important;
+  max-width: 600px !important; /* Ekran genişlik sınırını iyice açtık */
+  min-height: 100vh !important;
+  padding: 40px 24px 120px 24px !important; /* Alttan ve üstten devasa boşluklar verdik */
+  box-sizing: border-box !important;
+}
+
+/* 3. Butonların aralarını hunharca açıyoruz ki ekran aşağı doğru dolsun */
+.menu-category {
+  margin-bottom: 35px !important; /* Butonların arasını 35px yaparak aşağıya doğru yayılmasını zorladık */
+}
+
+/* 4. Butonları ULTRA DEVASA yapıyoruz */
+.category-toggle {
+  font-size: 2.8rem !important;  /* Yazı boyutunu muazzam yaptık, ekrandan fırlayacak kadar büyük! */
+  font-weight: 800 !important;   /* Harfleri iyice kalınlaştırdık */
+  padding: 55px 30px !important;  /* İŞTE ASIL BOMBA: Dikey yüksekliği 55px yaptık, butonlar ekranda dev gibi kalıplar olacak! */
+  border-radius: 20px !important; /* Koca butonlara yakışacak ultra şık yuvarlak köşeler */
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3) !important; /* Butonlar ekranda kabarık ve belirgin dursun */
+}
+
+/* 5. Buton içindeki sol ikonları ve sağdaki aşağı okları da devleştiriyoruz */
+.icon-left {
+  font-size: 2.4rem !important; /* Waffle, kahve vb. ikonları dev gibi oldu */
+  margin-right: 20px !important;
+}
+
+/* Sağ taraftaki o küçük oku da yaşlılar için görünür yapıyoruz */
+.arrow {
+  font-size: 1.8rem !important; 
+}
+
+/* 6. Kategoriler açıldığında içerideki ürünler ve fiyatlar da ultra okunaklı olsun */
+.item-title {
+  font-size: 2rem !important;   /* Ürün ismi (Örn: Klasik Waffle) dev boyutta */
+  font-weight: 800 !important;
+}
+
+.item-desc {
+  font-size: 1.4rem !important; /* Ürün açıklaması göz yormadan, çok rahat okunur */
+  line-height: 1.6 !important;
+}
+
+.item-price {
+  font-size: 2rem !important;   /* Fiyatlar aşırı belirgin, kabak gibi ortada */
+  font-weight: 9
