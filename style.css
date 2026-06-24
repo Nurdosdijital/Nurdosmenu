@@ -19,7 +19,7 @@ body {
   color: var(--text-main);
   font-family: 'Poppins', sans-serif;
   min-height: 100vh;
-  padding: 20px 10px;
+  padding: 0;
   overflow-x: hidden;
   position: relative;
 }
@@ -36,8 +36,11 @@ body {
 .bg-glow-2 { bottom: 20%; right: -50px; }
 
 .menu-container {
-  max-width: 500px;
-  margin: 0 auto;
+  .menu-container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
 }
 
 .menu-header {
@@ -491,4 +494,12 @@ html, body {
   display: flex !important;
   justify-content: space-between !important;
   align-items: center !important;
+}
+html,
+body,
+.menu-container,
+.menu-category,
+.category-toggle {
+    width: 100% !important;
+    max-width: none !important;
 }
