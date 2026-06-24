@@ -36,11 +36,9 @@ body {
 .bg-glow-2 { bottom: 20%; right: -50px; }
 
 .menu-container {
-  .menu-container {
     width: 100%;
     max-width: none;
     margin: 0;
-}
 }
 
 .menu-header {
