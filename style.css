@@ -296,3 +296,38 @@ body {
   color: var(--gold) !important;
   opacity: 0.8;
 }
+/* ========================================================
+   SAYFA ALTINDAKİ BOŞLUKLARI KAPATMA VE EKRENA YAYMA AYARLARI
+   ======================================================== */
+
+/* 1. Tarayıcının alt sınırını tamamen kapatıp arka planı eşitliyoruz */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  background-color: #0f1c24 !important; /* CodePen'deki o premium koyu turkuaz-siyah renk */
+}
+
+/* 2. Menü kutusunu dikeyde aşağıya doğru esnetiyoruz */
+.menu-container {
+  width: 100% !important;
+  max-width: 480px !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  padding: 20px 16px 80px 16px !important; /* En alttan 80px pay vererek logoyu ve içeriği rahatlatıyoruz */
+  box-sizing: border-box !important;
+}
+
+/* 3. Butonların aralarını dikeyde biraz daha açarak ekranı doldurmalarını sağlıyoruz */
+.menu-category {
+  margin-bottom: 18px !important; /* 12px olan orijinal boşluğu 18px yaptık */
+}
+
+/* 4. Butonların et kalınlığını (padding) arttırarak yaşlılar için basmayı kolaylaştırıyoruz */
+.category-toggle {
+  padding: 22px 20px !important; /* İç dikey genişliği arttı, butonlar ekranda daha çok yer kaplayacak */
+  font-size: 1.6rem !important;   /* Yazı boyutunu da yaşlı dostu ve okunaklı seviyeye çektik */
+}
