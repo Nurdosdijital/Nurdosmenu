@@ -468,7 +468,7 @@ html, body {
   width: 100% !important;
   max-width: 100% !important; /* İnatçı piksel sınırlarını (480px, 600px) kökten sildik! */
   min-height: 100vh !important;
-  padding: 40px 16px 120px 16px !important; /* Sağdan soldan taşmasın diye tatlı bir iç pay bıraktık */
+  padding: 40px 0 120px 0 !important; /* Sağdan soldan taşmasın diye tatlı bir iç pay bıraktık */
   box-sizing: border-box !important;
   display: block !important;
 }
