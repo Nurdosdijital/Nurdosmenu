@@ -459,3 +459,34 @@ html, body {
 .item-price {
   font-size: 2rem !important;   /* Fiyatlar aşırı belirgin, kabak gibi ortada */
   font-weight: 9
+/* ========================================================
+   ENLEMESİNE %100 DUVARDAN DUVARA TAM EKRAN GENİŞLİĞİ
+   ======================================================== */
+
+/* 1. Menü ana kutusunu sağdan soldan tamamen serbest bırakıp ekrana yayıyoruz */
+.menu-container {
+  width: 100% !important;
+  max-width: 100% !important; /* İnatçı piksel sınırlarını (480px, 600px) kökten sildik! */
+  min-height: 100vh !important;
+  padding: 40px 16px 120px 16px !important; /* Sağdan soldan taşmasın diye tatlı bir iç pay bıraktık */
+  box-sizing: border-box !important;
+  display: block !important;
+}
+
+/* 2. Butonların kendisini de tam genişliğe zorluyoruz */
+.menu-category {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin-bottom: 35px !important; /* Dikeydeki o güzel koca boşluğu koruyoruz */
+}
+
+.category-toggle {
+  width: 100% !important; /* Buton ekran eni ne kadarsa (iPhone, iPad vb.) oraya kadar esner */
+  font-size: 2.8rem !important;  
+  font-weight: 800 !important;   
+  padding: 55px 30px !important;  /* Dikeydeki o devasa yüksekliği koruyoruz */
+  border-radius: 20px !important; 
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
