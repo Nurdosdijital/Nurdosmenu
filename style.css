@@ -331,3 +331,66 @@ html, body {
   padding: 22px 20px !important; /* İç dikey genişliği arttı, butonlar ekranda daha çok yer kaplayacak */
   font-size: 1.6rem !important;   /* Yazı boyutunu da yaşlı dostu ve okunaklı seviyeye çektik */
 }
+/* ========================================================
+   SAYFAYI HUNHARCA DOLDURMA VE ULTRA DEV BUTON AYARLARI
+   ======================================================== */
+
+/* 1. Tüm ana katmanları ekrana kilitliyoruz, alttan renk kaçmasını kökten engelliyoruz */
+html, body {
+  margin: 0 !important;
+  padding: 0 !important;
+  height: auto !important;
+  min-height: 100vh !important;
+  background-color: #0f1c24 !important; /* Boşluk kalsa bile arka planla birleşecek */
+}
+
+/* 2. Menü kutusunu enlemesine ve boylamasına devasa yapıyoruz */
+.menu-container {
+  width: 100% !important;
+  max-width: 550px !important; /* Genişliği biraz daha açtık ki ekrana tam otursun */
+  min-height: 100vh !important;
+  padding: 30px 20px 100px 20px !important; /* Alttan devasa bir koruma payı */
+  box-sizing: border-box !important;
+}
+
+/* 3. Butonları dikeyde resmen dev birer tabela haline getiriyoruz */
+.menu-category {
+  margin-bottom: 26px !important; /* Butonların aralarını dikeyde iyice açtık, ekran aşağı doğru dolsun diye */
+}
+
+.category-toggle {
+  font-size: 2.2rem !important;  /* Yazı boyutunu muazzam yaptık, en arkadaki masadan okunur! */
+  font-weight: 700 !important;   /* Yazıyı iyice kalınlaştırdık */
+  padding: 45px 24px !important;  /* İŞTE SİHİRLİ DOKUNUŞ: Butonların dikey yüksekliğini 45px yaptık, ekranda dev gibi yer kaplayacaklar! */
+  border-radius: 16px !important; /* Koca butonlara uygun şık, yuvarlak köşeler */
+  width: 100% !important;
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+}
+
+/* 4. Butonların solundaki ikonları ve sağdaki aşağı okları da devleştiriyoruz */
+.icon-left {
+  font-size: 1.8rem !important; /* Waffle, kahve ikonları kabak gibi büyüdü */
+  margin-right: 16px !important;
+}
+
+.arrow {
+  font-size: 1.4rem !important; /* Sağdaki oklar çok daha belirgin */
+}
+
+/* 5. Kategoriler açıldığında içerideki ürünler ve fiyatlar da yaşlı dostu olsun */
+.item-title {
+  font-size: 1.6rem !important; /* Ürün ismi dev boyutta */
+  font-weight: 700 !important;
+}
+
+.item-desc {
+  font-size: 1.2rem !important; /* Ürün açıklaması çok rahat okunsun */
+  line-height: 1.5 !important;
+}
+
+.item-price {
+  font-size: 1.6rem !important; /* Fiyatlar aşırı belirgin, karıştırılamaz */
+  font-weight: 800 !important;
+}
