@@ -410,9 +410,9 @@ html, body {
 /* 2. Menü kutusunu enlemesine genişletip dikey yüksekliğini zorluyoruz */
 .menu-container {
   width: 100% !important;
-  max-width: 600px !important; /* Ekran genişlik sınırını iyice açtık */
+  max-width: none !important; /* Ekran genişlik sınırını iyice açtık */
   min-height: 100vh !important;
-  padding: 40px 24px 120px 24px !important; /* Alttan ve üstten devasa boşluklar verdik */
+  padding: 40px 0 120px 0 !important; /* Alttan ve üstten devasa boşluklar verdik */
   box-sizing: border-box !important;
 }
 
